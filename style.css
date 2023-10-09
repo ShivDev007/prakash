@@ -1,4 +1,51 @@
 .body{
-    background-color: yellow;
-    color: black;
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.container {
+display: flex;
+justify-content: space-between; /* Ensure cards are parallel and spaced evenly */
+align-items: center;
+gap: 20px;
+width: 80%; /* Adjust the container width as needed */
+}
+
+.card {
+flex: 1; /* Make each card take equal space within the container */
+background-color: #3498db;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+color: #fff;
+text-align: center;
+padding: 20px;
+transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+
+/* Apply animations from animate.css */
+.card:nth-child(1) {
+animation: fadeIn 1s ease 0.5s 1 forwards;
+}
+
+.card:nth-child(2) {
+animation: fadeIn 1s ease 1s 1 forwards;
+}
+
+.card:nth-child(3) {
+animation: fadeIn 1s ease 1.5s 1 forwards;
+}
+
+/* Add animate.css classes for additional animations */
+.card:hover {
+animation: animate_animated.animate__rubberBand 0.7s;
 }
